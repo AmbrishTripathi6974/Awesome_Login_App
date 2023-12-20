@@ -1,3 +1,7 @@
+const String tLogin = "Login";
+const String tSignUp = "SignUp";
+
+
 const String tAppName = ".appable/";
 const String tAppTagLine = "Ready to Code. \n Free for Everyone";
 
@@ -12,3 +16,6 @@ const String tOnBoardingSubTitle3 = "Register fast and improve with us";
 const String tOnBoardingCounter1 = "1";
 const String tOnBoardingCounter2 = "2";
 const String tOnBoardingCounter3 = "3";
+
+const String tWelcomeTitle = "Build Awesome Communuity";
+const String tWelcomeSubTitle = "Let's put your creativity on the development highway, craft apps that everyone love";
