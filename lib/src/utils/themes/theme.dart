@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/src/utils/themes/widgets_themes/text_formfield_theme.dart';
 import 'package:login_app/src/utils/themes/widgets_themes/text_themes.dart';
 
 class TAppTheme {
@@ -8,7 +9,10 @@ class TAppTheme {
       brightness: Brightness.light,
       textTheme: TTextTheme.lightTextTheme,
       elevatedButtonTheme:
-          ElevatedButtonThemeData(style: ElevatedButton.styleFrom()));
+          ElevatedButtonThemeData(style: ElevatedButton.styleFrom()),
+      inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme);
   static ThemeData darkTheme = ThemeData(
-      brightness: Brightness.dark, textTheme: TTextTheme.darkTextTheme);
+      brightness: Brightness.dark,
+      textTheme: TTextTheme.darkTextTheme,
+      inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme);
 }
