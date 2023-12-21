@@ -29,14 +29,11 @@ To get started with the Awesome Login App, follow these steps:
 2. Install the necessary dependencies.
 3. Configure your environment variables.
 4. Run the app and start exploring the amazing features!
+5. The Phone Number take number in (+91) 95110 ***** format, country is a must to get OTP
 
 ## Contributing
 
 We welcome contributions from the community! Feel free to open issues, submit pull requests, or suggest enhancements to make this app even more incredible.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
