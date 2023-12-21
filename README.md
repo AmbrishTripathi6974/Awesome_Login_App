@@ -1,5 +1,3 @@
-# login_app
-
 # Awesome Login App
 
 Welcome to the Awesome Login App repository! This app offers a seamless login experience with a plethora of features to ensure security, convenience, and customization.
