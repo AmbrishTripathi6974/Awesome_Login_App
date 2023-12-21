@@ -7,6 +7,7 @@ import 'package:login_app/src/constants/sizes.dart';
 import 'package:login_app/src/constants/text_strings.dart';
 import 'package:login_app/src/features/authentication/controllers/fade_in_animation_controller.dart';
 import 'package:login_app/src/features/authentication/screens/login/login_screen.dart';
+import 'package:login_app/src/features/authentication/screens/signup/signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -63,7 +64,7 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                       Expanded(
                           child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () => Get.to(() => const SignUpScreen()),
                               child: Text(tSignUp.toUpperCase()))),
                     ],
                   ),

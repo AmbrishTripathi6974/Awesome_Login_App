@@ -19,7 +19,7 @@ class SplashScreen extends StatelessWidget {
       body: Stack(
         children: [
           TFadeInAnimation(
-            durationInMs: 2000,
+            durationInMs: 1600,
             animate: TAnimatePosition(
                 topAfter: 0, topBefore: -30, leftAfter: 0, leftBefore: -30, rightAfter: 0, rightBefore: 0),
             child: const Image(
@@ -30,7 +30,7 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
           TFadeInAnimation(
-            durationInMs: 2000,
+            durationInMs: 1600,
             animate: TAnimatePosition(
                 topAfter: 160,
                 topBefore: 160,
@@ -47,14 +47,14 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
           TFadeInAnimation(
-            durationInMs: 2500,
+            durationInMs: 2000,
             animate: TAnimatePosition(bottomAfter: 190, bottomBefore: 0),
             child: const Image(
               image: AssetImage(tSplashImage),
             ),
           ),
           TFadeInAnimation(
-            durationInMs: 2500,
+            durationInMs: 2000,
             animate: TAnimatePosition(bottomAfter: 60, bottomBefore: 0, rightAfter: 20,rightBefore: 20),
             child: Container(
               width: tSplashContainerSize,

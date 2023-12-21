@@ -8,7 +8,7 @@ class FormHeaderWidget extends StatelessWidget {
     required this.image,
     required this.title,
     required this.subTitle,
-    this.imageHeight = 0.2,
+    this.imageHeight = 0.15,
     this.textAlign,
     this.crossAxisAlignment = CrossAxisAlignment.start,
   }) : super(key: key);
@@ -30,8 +30,8 @@ class FormHeaderWidget extends StatelessWidget {
       children: [
         Image(image: AssetImage(image), color: imageColor, height: size.height * imageHeight),
         SizedBox(height: heightBetween),
-        Text(title, style: Theme.of(context).textTheme.headline1),
-        Text(subTitle, textAlign: textAlign, style: Theme.of(context).textTheme.bodyText1),
+        Text(title, style: Theme.of(context).textTheme.displayLarge),
+        Text(subTitle, textAlign: textAlign, style: Theme.of(context).textTheme.bodyLarge),
       ],
     );
   }

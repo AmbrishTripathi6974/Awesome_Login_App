@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login_app/src/constants/sizes.dart';
 import 'package:login_app/src/constants/text_strings.dart';
+import 'package:login_app/src/features/authentication/controllers/otp_controller.dart';
 
 class OTPScreen extends StatelessWidget {
   const OTPScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    var otpController = Get.put(OTPController());
+    var otp;
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.all(tDefaultSize),
@@ -17,22 +21,33 @@ class OTPScreen extends StatelessWidget {
           children: [
             Text(
               tOtpTitle,
-              style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 70.0),
+              style: GoogleFonts.montserrat(
+                  fontWeight: FontWeight.bold, fontSize: 70.0),
             ),
-            Text(tOtpSubTitle.toUpperCase(), style: Theme.of(context).textTheme.headline6),
+            Text(tOtpSubTitle.toUpperCase(),
+                style: Theme.of(context).textTheme.headline6),
             const SizedBox(height: 40.0),
-            const Text("$tOtpMessage support@codingwitht.com", textAlign: TextAlign.center),
+            const Text("$tOtpMessage ambreesh09tripathi@gmail.com",
+                textAlign: TextAlign.center),
             const SizedBox(height: 20.0),
             OtpTextField(
-                mainAxisAlignment: MainAxisAlignment.center,
-                numberOfFields: 6,
-                fillColor: Colors.black.withOpacity(0.1),
-                filled: true,
-                onSubmit: (code) => print("OTP is => $code")),
+              mainAxisAlignment: MainAxisAlignment.center,
+              numberOfFields: 6,
+              fillColor: Colors.black.withOpacity(0.1),
+              filled: true,
+              onSubmit: (code) {
+                otp = code;
+                otpController.verifyOTP(otp);
+              },
+            ),
             const SizedBox(height: 20.0),
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(onPressed: () {}, child: const Text(tNext)),
+              child: ElevatedButton(
+                  onPressed: () {
+                    otpController.verifyOTP(otp);
+                  },
+                  child: const Text(tNext)),
             ),
           ],
         ),

@@ -8,3 +8,4 @@ const String tWelcomeImage = "assets/images/welcome_images/welcome-image.png";
 const String tWelcomeScreenImage = "assets/images/welcome_images/welcome-screen-image.png";
 const String tGoogleLogoImage = "assets/logo/google-logo.png";
 const String tForgetPasswordImage = "assets/images/forget_password/forget-password.png";
+const String tProfileImage = "assets/images/profile_images/profile-image.png";

@@ -1,9 +1,18 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
+import 'package:login_app/firebase_options.dart';
+import 'package:login_app/src/features/authentication/screens/on_boarding_screen/on_boarding_screen.dart';
+import 'package:login_app/src/repository/authentication_repository/authentication_repository.dart';
 import 'package:login_app/src/utils/themes/theme.dart';
 
-void main() {
+import 'src/features/authentication/controllers/otp_controller.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform).then((value) => Get.put(AuthenticationRepository()));
+  // Initialize OTPController
+  Get.put(OTPController());
   runApp(const MyApp());
 }
 
@@ -20,10 +29,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       defaultTransition: Transition.leftToRightWithFade,
       transitionDuration: const Duration(milliseconds: 500),
-      
-      home: SplashScreen(),
+      home:const  OnBoardingScreen(),
     );
   }
 }
-
-

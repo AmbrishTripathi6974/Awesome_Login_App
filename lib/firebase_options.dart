@@ -67,6 +67,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '516654462376',
     projectId: 'flutter-login-app-7ce42',
     storageBucket: 'flutter-login-app-7ce42.appspot.com',
+    androidClientId: '516654462376-be0cnt4lqqmoqa5jqo3diuj067d8kmqm.apps.googleusercontent.com',
+    iosClientId: '516654462376-i0l6p98i57qupl6j7hkqv98mdfmsmm0e.apps.googleusercontent.com',
     iosBundleId: 'com.example.loginApp',
   );
 
@@ -76,6 +78,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '516654462376',
     projectId: 'flutter-login-app-7ce42',
     storageBucket: 'flutter-login-app-7ce42.appspot.com',
+    androidClientId: '516654462376-be0cnt4lqqmoqa5jqo3diuj067d8kmqm.apps.googleusercontent.com',
+    iosClientId: '516654462376-45pc2d1frqrb663oe1h6a7obp51okp04.apps.googleusercontent.com',
     iosBundleId: 'com.example.loginApp.RunnerTests',
   );
 }

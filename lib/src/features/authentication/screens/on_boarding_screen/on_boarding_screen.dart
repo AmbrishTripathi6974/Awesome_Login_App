@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:login_app/src/constants/colors.dart';
 import 'package:login_app/src/features/authentication/controllers/on_boarding_controller.dart';
+import 'package:login_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -48,7 +49,7 @@ class OnBoardingScreen extends StatelessWidget {
             top: 50,
             right: 20,
             child: TextButton(
-              onPressed: () => obcontroller.skip(),
+              onPressed: () => Get.to(() => SplashScreen()),
               child: const Text(
                 "Skip",
                 style: TextStyle(color: Colors.grey),

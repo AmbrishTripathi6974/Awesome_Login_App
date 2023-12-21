@@ -8,9 +8,9 @@ class FadeInAnimationController extends GetxController{
   Future startSplashAnimation() async {
     await Future.delayed(const Duration(milliseconds: 500));
     animate.value = true;
-    await Future.delayed(const Duration(milliseconds: 4000));
+    await Future.delayed(const Duration(milliseconds: 5000));
     animate.value = false;
-    await Future.delayed(const Duration(milliseconds: 4000));
+    await Future.delayed(const Duration(milliseconds: 5000));
     Get.offAll(() => const WelcomeScreen());
   }
   Future startAnimation() async {
