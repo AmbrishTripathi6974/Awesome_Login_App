@@ -11,6 +11,7 @@ class OTPScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     var otpController = Get.put(OTPController());
     var otp;
     return Scaffold(
@@ -27,7 +28,7 @@ class OTPScreen extends StatelessWidget {
             Text(tOtpSubTitle.toUpperCase(),
                 style: Theme.of(context).textTheme.headline6),
             const SizedBox(height: 40.0),
-            const Text("$tOtpMessage ambreesh09tripathi@gmail.com",
+            const Text(tOtpMessage,
                 textAlign: TextAlign.center),
             const SizedBox(height: 20.0),
             OtpTextField(
