@@ -13,7 +13,7 @@ class SignUpWithEmailAndPasswordFailure {
         return const SignUpWithEmailAndPasswordFailure("An account already exists for that email");
         case "operation-not-allowed":
         return const SignUpWithEmailAndPasswordFailure("Operation is not allowed. Please contact support");
-        case "ser-disabled":
+        case "user-disabled":
         return const SignUpWithEmailAndPasswordFailure("This user has been disabled. Please contact support for help.");
       default:
         return const SignUpWithEmailAndPasswordFailure();

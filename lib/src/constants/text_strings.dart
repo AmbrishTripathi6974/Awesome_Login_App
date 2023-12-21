@@ -11,6 +11,7 @@ const String tResetViaEMail = "Reset via Mail Verification";
 const String tForgetPasswordTitle = "Make Selection!";
 const String tForgetPassword= "Forget Password";
 const String tNext = "Next";
+const String tUserProfile = "Users Profile";
 const String tDelete = "Delete";
 const String tOtpTitle = "CO\nDE";
 const String tProfile = "Profile";

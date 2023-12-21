@@ -7,6 +7,7 @@ import 'package:login_app/src/constants/sizes.dart';
 import 'package:login_app/src/constants/text_strings.dart';
 import 'package:login_app/src/features/authentication/screens/profile/profile_menu_widget.dart';
 import 'package:login_app/src/features/authentication/screens/profile/update_profile_screen.dart';
+import 'package:login_app/src/features/authentication/screens/profile/user_management.dart';
 import 'package:login_app/src/repository/authentication_repository/authentication_repository.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -61,7 +62,7 @@ class ProfileScreen extends StatelessWidget {
               SizedBox(
                 width: 200,
                 child: ElevatedButton(
-                  onPressed: () => Get.to(() => const UpdateProfileScreen()),
+                  onPressed: () => Get.to(() => UpdateProfileScreen()),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: tPrimaryColor, side: BorderSide.none, shape: const StadiumBorder()),
                   child: const Text(tEditProfile, style: TextStyle(color: tDarkColor)),
@@ -74,7 +75,7 @@ class ProfileScreen extends StatelessWidget {
               /// -- MENU
               ProfileMenuWidget(title: "Settings", icon: LineAwesomeIcons.cog, onPress: () {}),
               ProfileMenuWidget(title: "Billing Details", icon: LineAwesomeIcons.wallet, onPress: () {}),
-              ProfileMenuWidget(title: "User Management", icon: LineAwesomeIcons.user_check, onPress: () {}),
+              ProfileMenuWidget(title: "User Management", icon: LineAwesomeIcons.user_check, onPress: () => Get.to(() => const UserManagementScreen())),
               const Divider(),
               const SizedBox(height: 10),
               ProfileMenuWidget(title: "Information", icon: LineAwesomeIcons.info, onPress: () {}),
